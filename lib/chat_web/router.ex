@@ -19,7 +19,7 @@ defmodule ChatWeb.Router do
 
     get "/", PageController, :index
     live "/chat", PageLive, :index
-    live "chat/:id", RoomLive, :index
+    live "/chat/:id", RoomLive, :index
   end
 
   # Other scopes may use custom stacks.

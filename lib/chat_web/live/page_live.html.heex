@@ -1,1 +1,10 @@
 <button phx-click="random-room" title="Create a Random Room"> Create a Random Room</button>
+
+<div id="room-list">
+    <%= for room <- @rooms do %>
+        <div id="room-cont">
+            <p> <%= room %></p>
+            <button phx-click="join-room" value={room} title="Create a Random Room"> Join Room</button>
+        </div>
+    <%end %>
+</div>

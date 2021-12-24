@@ -65,14 +65,16 @@ defmodule ChatWeb.RoomLive do
   end
 
   def display_message(%{ type: :system, id: id, content: content }) do
-    ~E"""
-    <p id="<%= id %>"<em><%= content %></em> </p>
+    assigns = %{id: id}
+    ~H"""
+    <p id={id}> <em><%= content %></em> </p>
     """
   end
 
   def display_message(%{ id: id, content: content, username: username}) do
-    ~E"""
-    <p id="<%= id %>"><strong> <%= username %> </strong>: <%= content %> </p>
+    assigns = %{id: id}
+    ~H"""
+    <p id={@id}><strong> <%= username %> </strong>: <%= content %> </p>
     """
   end
 
