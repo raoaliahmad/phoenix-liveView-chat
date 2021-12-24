@@ -1,6 +1,23 @@
 /* This file is for your main application CSS */
 @import "./phoenix.css";
 
+
+#room-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#room-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+    #room-cont p {
+        margin-right: 5px;
+    }
+
 #chat-cont {
     display: flex;
     margin: -1em 1em 1em -1em;
