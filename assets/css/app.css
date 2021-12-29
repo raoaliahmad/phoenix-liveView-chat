@@ -20,7 +20,7 @@
 
 #chat-cont {
     display: flex;
-    margin: -1em 1em 1em -1em;
+    margin: -1em 0em 1em 0em;
     flex-direction: row;
     justify-content: space-between;
     height: 500px;
